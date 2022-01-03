@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,6 +7,13 @@ import { AnimallistarComponent } from './animallistar/animallistar.component';
 import { AnimalincluirComponent } from './animalincluir/animalincluir.component'
 import { FormsModule } from '@angular/forms';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
+import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
+import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
+import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
+import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
+import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
+import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +21,13 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     AnimallistarComponent,
     AnimalincluirComponent,
     LancelistarComponent,
+    VeterinariolistarComponent,
+    VeterinarioincluirComponent,
+    LeilaolistarComponent,
+    VendedorlistarComponent,
+    CompradorlistarComponent,
+    CompradorincluirComponent
+
   ],
   imports: [
     BrowserModule,

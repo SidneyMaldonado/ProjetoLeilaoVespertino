@@ -1,0 +1,22 @@
+<div class="container mt-3">
+    <h2>Lista de Leilões</h2>
+
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Data</th>
+          <th>Nome</th>
+          <th>Ativo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let leilao of leiloes">
+          <td>{{leilao.id}}</td>
+          <td>{{leilao.data}}</td>
+          <td>{{leilao.nome}}</td>
+          <td>{{leilao.ativo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

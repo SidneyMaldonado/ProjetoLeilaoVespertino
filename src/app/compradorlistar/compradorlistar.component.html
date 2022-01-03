@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <h2>Lista de Compradores</h2>
+    <p><a href="comprador/incluir" class="btn btn-success">Incluir Comprador</a></p>
+
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Ativo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let comprador of compradores">
+          <td>{{comprador.id}}</td>
+          <td>{{comprador.nome}}</td>
+          <td>{{comprador.email}}</td>
+          <td>{{comprador.telefone}}</td>
+          <td>{{comprador.ativo}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>

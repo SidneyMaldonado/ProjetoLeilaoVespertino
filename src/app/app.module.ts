@@ -23,10 +23,8 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     AppComponent,
     AnimallistarComponent,
     AnimalincluirComponent,
-    LeilaolistarComponent,
     LeilaoincluirComponent,
     VendedorlistarComponent,
-    LeilaolistarComponent,
     VendedorlistarComponent,
     CompradorlistarComponent,
     CompradorincluirComponent,
@@ -40,9 +38,9 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     CompradorlistarComponent,
     CompradorincluirComponent,
     VendedorincluirComponent,
-    LeilaoincluirComponent,
     VendedorincluirComponent,
-    VeterinariolistarComponent
+    VeterinariolistarComponent,
+
 
   ],
   imports: [

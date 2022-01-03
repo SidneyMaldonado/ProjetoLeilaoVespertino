@@ -24,24 +24,25 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     AppComponent,
     AnimallistarComponent,
     AnimalincluirComponent,
+
     LeilaoincluirComponent,
+
     VendedorlistarComponent,
-    VendedorlistarComponent,
+
+
     CompradorlistarComponent,
     CompradorincluirComponent,
+
     VeterinarioincluirComponent,
     VeterinariolistarComponent,
+
     LancelistarComponent,
-    VeterinariolistarComponent,
-    VeterinarioincluirComponent,
+
     LeilaolistarComponent,
-    VendedorlistarComponent,
-    CompradorlistarComponent,
-    CompradorincluirComponent,
+
     LanceincluirComponent,
+
     VendedorincluirComponent,
-    VendedorincluirComponent,
-    VeterinariolistarComponent,
 
 
   ],

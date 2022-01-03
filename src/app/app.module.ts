@@ -13,6 +13,7 @@ import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
 import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CompradorincluirComponent } from './compradorincluir/compradorincluir.c
     LeilaolistarComponent,
     VendedorlistarComponent,
     CompradorlistarComponent,
-    CompradorincluirComponent
+    CompradorincluirComponent,
+    LanceincluirComponent
 
   ],
   imports: [

@@ -6,20 +6,34 @@ import { RouterModule, Routes } from '@angular/router';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
+import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+<<<<<<< HEAD
 import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
+=======
+import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
+import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
+>>>>>>> 8749075ebffc21c4d11d5185f6694e9f1d65ce7f
 
 const routes: Routes = [
   {path: "animal", component: AnimallistarComponent},
-  {path:"animal/incluir", component: AnimalincluirComponent},
+  {path: "animal/incluir", component: AnimalincluirComponent},
   {path: "lance", component: LancelistarComponent},
+  {path: "lance/incluir", component: LanceincluirComponent},
   {path: "veterinario", component: VeterinariolistarComponent},
   {path: "veterinario/incluir", component: VeterinarioincluirComponent},
   {path: "comprador", component: CompradorlistarComponent},
   {path: "comprador/incluir", component: CompradorincluirComponent},
+<<<<<<< HEAD
   {path: "leilao", component:LeilaolistarComponent},
   {path: "leilao", component:LeilaoincluirComponent}
+=======
+  {path: "vendedor", component: VendedorlistarComponent},
+  {path: "vendedor/incluir", component: VendedorincluirComponent}
+
+
+>>>>>>> 8749075ebffc21c4d11d5185f6694e9f1d65ce7f
 
 ];
 

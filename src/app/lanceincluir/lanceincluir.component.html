@@ -1,0 +1,43 @@
+<div class="container mt-3">
+    <form method="post" #frm="ngForm" (ngSubmit)="incluir(frm)">
+        
+        <div class="mb-3 mt-3">
+          <label for="data" class="form-label">Data:</label>
+          <input type="text" class="form-control" id="data" placeholder="Informe a data " name="data" [(ngModel)]="lance.data">
+        </div>
+        
+        <div class="mb-3 mt-3">
+            <label for="valor" class="form-label">Valor:</label>
+            <input type="text" class="form-control" id="valor" placeholder="Informe o valor" name="valor" 
+            [(ngModel)]="lance.valor">
+          </div>
+    
+          <div class="mb-3 mt-3">
+            <label for="idComprador" class="form-label">idComprador:</label>
+            <input type="text" class="form-control" id="idComprador" placeholder="Informe o id do Comprador" 
+            name="idComprador" [(ngModel)]="lance.idComprador">
+          </div>
+    
+          <div class="mb-3 mt-3">
+            <label for="idLeilao" class="form-label">idLeilao:</label>
+            <input type="number" class="form-control" id="preco" placeholder="Informe o id do Leilao" 
+            name="idLeilao" [(ngModel)]="lance.idLeilao" >
+          </div>
+    
+          <div class="mb-3 mt-3">
+            <label for="idAnimal" class="form-label">idAnimal:</label>
+            <select [(ngModel)]="lance.idAnimal" id="idAnimal" name="idAnimal" class="form-select" >
+                <option *ngFor="let animal of animais" value="{{animal.id}}">{{animal.nome}}</option>
+            </select>
+          </div>
+    
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="lance.ativo" >Ativo
+          </label>
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+    </div>

@@ -11,6 +11,7 @@ import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component'
 import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
 import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+import { LanceincluirComponent } from './lanceincluir/lanceincluir.component';
 import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
@@ -37,6 +38,7 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     VendedorlistarComponent,
     CompradorlistarComponent,
     CompradorincluirComponent,
+    LanceincluirComponent,
     VendedorincluirComponent,
     VendedorincluirComponent,
     VeterinariolistarComponent,

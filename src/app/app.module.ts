@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimallistarComponent } from './animallistar/animallistar.component';
 import { AnimalincluirComponent } from './animalincluir/animalincluir.component'
 import { FormsModule } from '@angular/forms';
-<<<<<<< HEAD
+import { LancelistarComponent } from './lancelistar/lancelistar.component';
+import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
+import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
+<<<<<<< HEAD
 import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
 =======
 <<<<<<< HEAD
-import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
 =======
+>>>>>>> 167b8f4a52d78aa760603651b0649645e2e63a7f
+import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
 import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
->>>>>>> e6a21bb6ed9fa86eca26e3d9c8ee630466d47fc3
->>>>>>> ffe147cd9b50e7888423c9e92e6bc3c1693a7bb6
+import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,16 +29,31 @@ import { CompradorincluirComponent } from './compradorincluir/compradorincluir.c
     AnimallistarComponent,
     AnimalincluirComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
     LeilaolistarComponent,
 LeilaoincluirComponent
 =======
 <<<<<<< HEAD
     VendedorlistarComponent
 =======
+=======
+    VendedorlistarComponent,
+>>>>>>> 167b8f4a52d78aa760603651b0649645e2e63a7f
     CompradorlistarComponent,
-    CompradorincluirComponent
->>>>>>> e6a21bb6ed9fa86eca26e3d9c8ee630466d47fc3
->>>>>>> ffe147cd9b50e7888423c9e92e6bc3c1693a7bb6
+    CompradorincluirComponent,
+    LeilaolistarComponent,
+    VeterinarioincluirComponent,
+    VeterinariolistarComponent,
+    LancelistarComponent,
+    VeterinariolistarComponent,
+    VeterinarioincluirComponent,
+    LeilaolistarComponent,
+    VendedorlistarComponent,
+    CompradorlistarComponent,
+    CompradorincluirComponent,
+    VendedorincluirComponent
+
+
   ],
   imports: [
     BrowserModule,

@@ -1,40 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Comprador } from '../models/comprador';
 import { Mensagem } from '../models/mensagem';
-import { CompradorService } from '../services/comprador.service';
+import { Veterinario } from '../models/veterinario';
+import { VeterinarioService } from '../services/veterinario.service';
 
 @Component({
-  selector: 'app-compradorincluir',
-  templateUrl: './compradorincluir.component.html',
-  styleUrls: ['./compradorincluir.component.css']
+  selector: 'app-veterinarioincluir',
+  templateUrl: './veterinarioincluir.component.html',
+  styleUrls: ['./veterinarioincluir.component.css']
 })
-export class CompradorincluirComponent implements OnInit {
+export class VeterinarioincluirComponent implements OnInit {
 
   mensagem: Mensagem ={
     mensagem: '',
     erro: []
   }
-  comprador: Comprador = {
-    id: 0,
-    nome: '',
-    email: '',
-    telefone: '',
-    ativo: true
+
+  veterinario: Veterinario = {
+    id: 0, 
+    nome: '', 
+    email: '',  
+    telefone: '',  
+    ativo: false
   }
 
-  constructor(private servicoComprador: CompradorService, private router: Router ) { }
+  constructor(private veterinarioService: VeterinarioService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   incluir( frm: NgForm){
-    this.servicoComprador.incluir( this.comprador).subscribe(
+    this.veterinarioService.incluir( this.veterinario).subscribe(
       dados => { this.mensagem = dados
                   alert( this.mensagem.mensagem )
                   if (this.mensagem.erro.length == 0){
-                    this.router.navigateByUrl("comprador");
+                    this.router.navigateByUrl("veterinario");
 
                   } else {
                     this.mensagem.erro.forEach(function (value) {

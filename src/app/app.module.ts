@@ -13,6 +13,7 @@ import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
 import { CompradorlistarComponent } from './compradorlistar/compradorlistar.component';
 import { CompradorincluirComponent } from './compradorincluir/compradorincluir.component';
+import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 
 
 
@@ -33,7 +34,10 @@ import { CompradorincluirComponent } from './compradorincluir/compradorincluir.c
     LeilaolistarComponent,
     VendedorlistarComponent,
     CompradorlistarComponent,
-    CompradorincluirComponent
+    CompradorincluirComponent,
+    VendedorincluirComponent
+
+
   ],
   imports: [
     BrowserModule,

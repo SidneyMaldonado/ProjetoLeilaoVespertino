@@ -1,0 +1,50 @@
+<div class="container mt-3">
+<form method="post" #frm="ngForm" (ngSubmit)="incluir(frm)">
+    
+    <div class="mb-3 mt-3">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="text" class="form-control" id="nome" placeholder="Informe o nome " name="nome" [(ngModel)]="animal.nome">
+    </div>
+    
+    <div class="mb-3 mt-3">
+        <label for="registro" class="form-label">Registro:</label>
+        <input type="text" class="form-control" id="registro" placeholder="Informe o registro" name="registro" 
+        [(ngModel)]="animal.registro">
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="raca" class="form-label">Raça:</label>
+        <input type="text" class="form-control" id="raca" placeholder="Informe a raça" 
+        name="raca" [(ngModel)]="animal.raca">
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="preco" class="form-label">Preço:</label>
+        <input type="number" class="form-control" id="preco" placeholder="Informe o preco" 
+        name="preco" [(ngModel)]="animal.preco" >
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="idVendedor" class="form-label">Vendedor:</label>
+        <select [(ngModel)]="animal.idVendedor" id="idVendedor" name="idVendedor" class="form-select" >
+            <option *ngFor="let vendedor of vendedores" value="{{vendedor.id}}">{{vendedor.nome}}</option>
+        </select>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="idVeterinario" class="form-label">Veterinário:</label>
+        <input type="number" class="form-control" id="idVeterinario" placeholder="Informe o veterinário"
+         name="idVeterinario" [(ngModel)]="animal.idVeterinario" >
+      </div>
+
+
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="animal.ativo" >Ativo
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>

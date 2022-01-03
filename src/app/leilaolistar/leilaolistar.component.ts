@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Leilao } from '../models/leilao';
-import { LeilãoService } from '../services/leilão.service';
+import { LeilaoService} from '../services/leilao.service';
 
 @Component({
   selector: 'app-leilaolistar',
@@ -11,7 +11,7 @@ export class LeilaolistarComponent implements OnInit {
 
   leiloes: Leilao[] = []
 
-  constructor(private servicoleilao : LeilãoService) { }
+  constructor(private servicoleilao : LeilaoService) { }
 
   ngOnInit(): void {
     this.servicoleilao.listar().subscribe(

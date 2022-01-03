@@ -9,6 +9,7 @@ import { AnimalincluirComponent } from './animalincluir/animalincluir.component'
 import { FormsModule } from '@angular/forms';
 <<<<<<< HEAD
 import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
+import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component';
 =======
 <<<<<<< HEAD
 import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
@@ -24,7 +25,8 @@ import { CompradorincluirComponent } from './compradorincluir/compradorincluir.c
     AnimallistarComponent,
     AnimalincluirComponent,
 <<<<<<< HEAD
-    LeilaolistarComponent
+    LeilaolistarComponent,
+LeilaoincluirComponent
 =======
 <<<<<<< HEAD
     VendedorlistarComponent

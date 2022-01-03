@@ -7,7 +7,7 @@ import { Mensagem } from '../models/mensagem';
 @Injectable({
   providedIn: 'root'
 })
-export class LeilãoServiceService {
+export class LeilãoService {
 
   constructor(private http : HttpClient) { }
 

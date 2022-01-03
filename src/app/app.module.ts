@@ -7,12 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AnimallistarComponent } from './animallistar/animallistar.component';
 import { AnimalincluirComponent } from './animalincluir/animalincluir.component'
 import { FormsModule } from '@angular/forms';
+import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
+import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioincluir.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimallistarComponent,
-    AnimalincluirComponent
+    AnimalincluirComponent,
+    VeterinariolistarComponent,
+    VeterinarioincluirComponent
   ],
   imports: [
     BrowserModule,

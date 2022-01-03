@@ -1,0 +1,31 @@
+<div class="container mt-3">
+<h2>Lance</h2>
+
+<a class="btn btn-primary" href="lanceincluir" role="button">Novo lance</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Ativo</th>
+            <th>idComprador</th>
+            <th>idLeilao</th>
+            <th>idAnimal</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let lance of lances">
+            <td>{{lance.id}}</td>
+            <td>{{lance.data}}</td>
+            <td>{{lance.valor}}</td>
+            <td>{{lance.ativo}}</td>
+            <td>{{lance.idComprador}}</td>
+            <td>{{lance.idLeilao}}</td>
+            <td>{{lance.idAnimal}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

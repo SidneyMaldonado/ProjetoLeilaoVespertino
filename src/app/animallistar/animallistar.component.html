@@ -10,6 +10,7 @@
           <th>Registro</th>
           <th>Preço</th>
           <th>Raça</th>
+          <th>Ação</th>
         </tr>
       </thead>
       <tbody>
@@ -19,6 +20,9 @@
           <td>{{animal.registro}}</td>
           <td>{{animal.preco}}</td>
           <td>{{animal.raca}}</td>
+          <td> <a href="animal/alterar/{{animal.id}}" class="btn btn-warning">Alterar</a>&nbsp;
+            <a href="animal/excluir/{{animal.id}}" class="btn btn-danger">Excluir</a> 
+          </td>
 
         </tr>
       </tbody>

@@ -24,7 +24,7 @@ export class AnimalService {
     return this.http.put<Mensagem>("http://localhost:8080/animal", animal);
   }
   excluir(id: string ): Observable<Mensagem>{
-    return this.http.delete<Mensagem>("http://localhost:8080/animal/"+id)
+    return this.http.delete<Mensagem>("http://localhost:8080/animal/" + id);
   }
   
 

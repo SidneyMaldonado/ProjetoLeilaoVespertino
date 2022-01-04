@@ -1,6 +1,9 @@
+import { AnimalexcluirComponent } from './animalexcluir/animalexcluir.component';
+import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
 import { LeilaolistarComponent } from './leilaolistar/leilaolistar.component';
 import { AnimalincluirComponent } from './animalincluir/animalincluir.component';
 import { AnimallistarComponent } from './animallistar/animallistar.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
@@ -15,10 +18,12 @@ import { LeilaoincluirComponent } from './leilaoincluir/leilaoincluir.component'
 import { VendedorlistarComponent } from './vendedorlistar/vendedorlistar.component';
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 
+
 const routes: Routes = [
   {path: "animal", component: AnimallistarComponent},
   {path: "animal/incluir", component: AnimalincluirComponent},
-
+  {path: "animal/alterar/:id", component: AnimalalterarComponent},
+  {path: "animal/excluir/:id", component: AnimalexcluirComponent},
   {path: "lance", component: LancelistarComponent},
   {path: "lance/incluir", component: LanceincluirComponent},
 

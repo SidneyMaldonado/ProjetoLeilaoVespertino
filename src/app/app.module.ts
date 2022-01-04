@@ -16,6 +16,8 @@ import { VeterinarioincluirComponent } from './veterinarioincluir/veterinarioinc
 import { VendedorincluirComponent } from './vendedorincluir/vendedorincluir.component';
 import { VeterinariolistarComponent } from './veterinariolistar/veterinariolistar.component';
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
+import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
+import { AnimalexcluirComponent } from './animalexcluir/animalexcluir.component';
 
 
 
@@ -43,6 +45,8 @@ import { LancelistarComponent } from './lancelistar/lancelistar.component';
     LanceincluirComponent,
 
     VendedorincluirComponent,
+      AnimalalterarComponent,
+      AnimalexcluirComponent,
 
 
   ],

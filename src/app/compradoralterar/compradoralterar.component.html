@@ -1,1 +1,30 @@
-<p>compradoralterar works!</p>
+<div class="container mt-3">
+    <form method="post" #frm="ngForm" (ngSubmit)="alterar(frm)">
+        
+        <div class="mb-3 mt-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="nome" placeholder="Informe o nome " name="nome" [(ngModel)]="compradores.nome">
+        </div>
+        
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Informe o email" name="email" 
+            [(ngModel)]="compradores.email">
+          </div>
+    
+          <div class="mb-3 mt-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" placeholder="Informe o telefone" 
+            name="telefone" [(ngModel)]="compradores.telefone">
+          </div>
+
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="compradores.ativo" >Ativo
+          </label>
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+    </div>

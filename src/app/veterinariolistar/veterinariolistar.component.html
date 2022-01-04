@@ -10,6 +10,7 @@
             <th>Email</th>
             <th>Telefone</th>
             <th>Ativo</th>
+            <th>Acão</th>
         </tr>
       </thead>
       <tbody>
@@ -19,6 +20,9 @@
             <td>{{veterinario.email}}</td>
             <td>{{veterinario.telefone}}</td>
             <td>{{veterinario.ativo}}</td>
+            <td> <a href="veterinario/alterar/{{veterinario.id}}" class="btn btn-warning">Alterar</a>&nbsp;
+              <a href="veterinario/excluir/{{veterinario.id}}" class="btn btn-danger">Excluir</a> 
+            </td>
         </tr>
       </tbody>
     </table>

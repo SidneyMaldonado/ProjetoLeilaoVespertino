@@ -1,1 +1,46 @@
-<p>lanceexcluir works!</p>
+<div class="container mt-3">
+  <form method="post" #frm="ngForm" (ngSubmit)="excluir(frm)">
+
+      <div class="mb-3 mt-3">
+        <label for="data" class="form-label">Data:</label>
+        <input disabled type="text" class="form-control" id="data" placeholder="Informe a data " name="data" [(ngModel)]="lance.data">
+      </div>
+
+      <div class="mb-3 mt-3">
+          <label for="valor" class="form-label">Valor:</label>
+          <input disabled type="text" class="form-control" id="valor" placeholder="Informe o valor" name="valor"
+          [(ngModel)]="lance.valor">
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="idComprador" class="form-label">Comprador:</label>
+          <select disabled [(ngModel)]="lance.idComprador" id="idComprador" name="idComprador" class="form-select" >
+            <option *ngFor="let comprador of compradors" value="{{comprador.id}}">{{comprador.nome}}</option>
+        </select>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="idLeilao" class="form-label">Leilao:</label>
+          <select disabled [(ngModel)]="lance.idLeilao" id="idLeilao" name="idLeilao" class="form-select" >
+            <option *ngFor="let leilao of leilaos" value="{{leilao.id}}">{{leilao.nome}}</option>
+        </select>
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="idAnimal" class="form-label">Animal:</label>
+          <select disabled [(ngModel)]="lance.idAnimal" id="idAnimal" name="idAnimal" class="form-select" >
+              <option *ngFor="let animal of animais" value="{{animal.id}}">{{animal.nome}}</option>
+          </select>
+        </div>
+
+      <div  class="form-check mb-3">
+        <label class="form-check-label">
+          <input disabled class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="lance.ativo" >Ativo
+        </label>
+      </div>
+
+      <a href="lance" class="btn btn-primary">Voltar</a> &nbsp;
+        <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+    </form>
+
+  </div>

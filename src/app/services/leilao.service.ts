@@ -20,4 +20,11 @@ export class LeilaoService {
   incluir(leilao: Leilao): Observable<Mensagem>{
     return this.http.post<Mensagem>("http://localhost:8080/leilao", leilao);
   }
+
+  alterar(leilao: Leilao): Observable<Mensagem>{
+    return this.http.put<Mensagem>("http://localhost:8080/leilao", leilao);
+  }
+  excluir(id: string ): Observable<Mensagem>{
+    return this.http.delete<Mensagem>("http://localhost:8080/leilao/"+id)
+  }
 }

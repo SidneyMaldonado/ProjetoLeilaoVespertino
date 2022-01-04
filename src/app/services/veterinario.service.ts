@@ -26,4 +26,7 @@ export class VeterinarioService {
   alterar(veterinario: Veterinario): Observable<Mensagem>{
     return this.http.put<Mensagem>("http://localhost:8080/veterinario", veterinario);
   }
+  excluir(id: string ): Observable<Mensagem>{
+    return this.http.delete<Mensagem>("http://localhost:8080/veterinario/"+id)
+  }
 }

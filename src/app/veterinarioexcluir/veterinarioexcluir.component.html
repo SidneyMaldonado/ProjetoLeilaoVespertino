@@ -1,1 +1,30 @@
-<p>veterinarioexcluir works!</p>
+<div class="container mt-3">
+    <form method="post" #frm="ngForm" (ngSubmit)="excluir(frm)">
+        
+        <div class="mb-3 mt-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input disabled type="text" class="form-control" id="nome" placeholder="Informe o nome " name="nome" [(ngModel)]="veterinarios.nome">
+        </div>
+        
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">email:</label>
+            <input disabled type="text" class="form-control" id="email" placeholder="Informe o E-mail" name="email" 
+            [(ngModel)]="veterinarios.email">
+          </div>
+    
+          <div class="mb-3 mt-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input disabled type="text" class="form-control" id="telefone" placeholder="Informe o telefone" 
+            name="telefone" [(ngModel)]="veterinarios.telefone">
+          </div>
+          
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="veterinarios.ativo" >Ativo
+          </label>
+        </div>
+        <a href="veterinarios" class="btn btn-primary">Voltar</a> &nbsp;
+        <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+      </form>
+    
+    </div>

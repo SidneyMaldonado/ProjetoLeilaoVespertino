@@ -36,37 +36,28 @@ import { VeterinarioexcluirComponent } from './veterinarioexcluir/veterinarioexc
     AppComponent,
     AnimallistarComponent,
     AnimalincluirComponent,
-
     LeilaoincluirComponent,
-
     VendedorlistarComponent,
-
-
     CompradorlistarComponent,
     CompradorincluirComponent,
-
     VeterinarioincluirComponent,
     VeterinariolistarComponent,
-
     LancelistarComponent,
-
     LeilaolistarComponent,
-
     LanceincluirComponent,
-
     VendedorincluirComponent,
-      AnimalalterarComponent,
-      AnimalexcluirComponent,
-      CompradoralterarComponent,
-      LancealterarComponent,
-      LeilaoalterarComponent,
-      VendedoralterarComponent,
-      VeterinarioalterarComponent,
-      CompradorexcluirComponent,
-      LanceexcluirComponent,
-      LeilaoexcluirComponent,
-      VendedorexcluirComponent,
-      VeterinarioexcluirComponent,
+    AnimalalterarComponent,
+    AnimalexcluirComponent,
+    CompradoralterarComponent,
+    LancealterarComponent,
+    LeilaoalterarComponent,
+    VendedoralterarComponent,
+    VeterinarioalterarComponent,
+    CompradorexcluirComponent,
+    LanceexcluirComponent,
+    LeilaoexcluirComponent,
+    VendedorexcluirComponent,
+    VeterinarioexcluirComponent
 
 
   ],

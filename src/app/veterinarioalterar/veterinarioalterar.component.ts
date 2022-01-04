@@ -43,7 +43,7 @@ export class VeterinarioalterarComponent implements OnInit {
       dados => {this.mensagem = dados
         if (this.mensagem.erro.length == 0){
           alert( this.mensagem.mensagem)
-          this.router.navigateByUrl("animal")
+          this.router.navigateByUrl("veterinario")
         } else {
           this.mensagem.erro.forEach( function (value) { alert(value) })
         }

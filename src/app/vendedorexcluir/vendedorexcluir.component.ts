@@ -27,6 +27,8 @@ export class VendedorexcluirComponent implements OnInit {
   constructor(private servicoVendedor: VendedorService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    let id = this.route.snapshot.paramMap.get("id")
+    this.servicoVendedor.buscar(id+"").subscribe(dados => this.vendedor = dados)
   }
 
   excluir(frm: NgForm){

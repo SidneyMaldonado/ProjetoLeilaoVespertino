@@ -1,1 +1,23 @@
-<p>leilaoexcluir works!</p>
+<div class="container mt-3">
+    <form method="post" #frm="ngForm" (ngSubmit)="excluir(frm)">
+        
+        <div class="mb-3 mt-3">
+          <label for="data" class="form-label">Data:</label>
+          <input disabled type="text" class="form-control" id="data" placeholder="Informe a data " name="data" [(ngModel)]="leiloes.data">
+        </div>
+        
+        <div class="mb-3 mt-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input disabled type="text" class="form-control" id="nome" placeholder="Informe o nome" name="nome" 
+            [(ngModel)]="leiloes.nome">
+          </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="leiloes.ativo" >Ativo
+          </label>
+        </div>
+        <a href="leiloes" class="btn btn-primary">Voltar</a> &nbsp;
+        <button type="submit" class="btn btn-danger">Confirmar Exclusão</button>
+      </form>
+    
+    </div>

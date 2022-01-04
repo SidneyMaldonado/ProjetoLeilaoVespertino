@@ -14,14 +14,16 @@
     
           <div class="mb-3 mt-3">
             <label for="idComprador" class="form-label">idComprador:</label>
-            <input type="text" class="form-control" id="idComprador" placeholder="Informe o id do Comprador" 
-            name="idComprador" [(ngModel)]="lance.idComprador">
+            <select [(ngModel)]="lance.idComprador" id="idComprador" name="idComprador" class="form-select" >
+              <option *ngFor="let comprador of compradors" value="{{comprador.id}}">{{comprador.nome}}</option>
+          </select>
           </div>
     
           <div class="mb-3 mt-3">
             <label for="idLeilao" class="form-label">idLeilao:</label>
-            <input type="number" class="form-control" id="preco" placeholder="Informe o id do Leilao" 
-            name="idLeilao" [(ngModel)]="lance.idLeilao" >
+            <select [(ngModel)]="lance.idLeilao" id="idLeilao" name="idLeilao" class="form-select" >
+              <option *ngFor="let leilao of leilaos" value="{{leilao.id}}">{{leilao.nome}}</option>
+          </select>
           </div>
     
           <div class="mb-3 mt-3">

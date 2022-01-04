@@ -18,6 +18,16 @@ import { VeterinariolistarComponent } from './veterinariolistar/veterinariolista
 import { LancelistarComponent } from './lancelistar/lancelistar.component';
 import { AnimalalterarComponent } from './animalalterar/animalalterar.component';
 import { AnimalexcluirComponent } from './animalexcluir/animalexcluir.component';
+import { CompradoralterarComponent } from './compradoralterar/compradoralterar.component';
+import { LancealterarComponent } from './lancealterar/lancealterar.component';
+import { LeilaoalterarComponent } from './leilaoalterar/leilaoalterar.component';
+import { VendedoralterarComponent } from './vendedoralterar/vendedoralterar.component';
+import { VeterinarioalterarComponent } from './veterinarioalterar/veterinarioalterar.component';
+import { CompradorexcluirComponent } from './compradorexcluir/compradorexcluir.component';
+import { LanceexcluirComponent } from './lanceexcluir/lanceexcluir.component';
+import { LeilaoexcluirComponent } from './leilaoexcluir/leilaoexcluir.component';
+import { VendedorexcluirComponent } from './vendedorexcluir/vendedorexcluir.component';
+import { VeterinarioexcluirComponent } from './veterinarioexcluir/veterinarioexcluir.component';
 
 
 
@@ -47,6 +57,16 @@ import { AnimalexcluirComponent } from './animalexcluir/animalexcluir.component'
     VendedorincluirComponent,
       AnimalalterarComponent,
       AnimalexcluirComponent,
+      CompradoralterarComponent,
+      LancealterarComponent,
+      LeilaoalterarComponent,
+      VendedoralterarComponent,
+      VeterinarioalterarComponent,
+      CompradorexcluirComponent,
+      LanceexcluirComponent,
+      LeilaoexcluirComponent,
+      VendedorexcluirComponent,
+      VeterinarioexcluirComponent,
 
 
   ],

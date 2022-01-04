@@ -13,21 +13,21 @@
           </div>
     
           <div class="mb-3 mt-3">
-            <label for="idComprador" class="form-label">idComprador:</label>
+            <label for="idComprador" class="form-label">Comprador:</label>
             <select [(ngModel)]="lance.idComprador" id="idComprador" name="idComprador" class="form-select" >
               <option *ngFor="let comprador of compradors" value="{{comprador.id}}">{{comprador.nome}}</option>
           </select>
           </div>
     
           <div class="mb-3 mt-3">
-            <label for="idLeilao" class="form-label">idLeilao:</label>
+            <label for="idLeilao" class="form-label">Leilao:</label>
             <select [(ngModel)]="lance.idLeilao" id="idLeilao" name="idLeilao" class="form-select" >
               <option *ngFor="let leilao of leilaos" value="{{leilao.id}}">{{leilao.nome}}</option>
           </select>
           </div>
     
           <div class="mb-3 mt-3">
-            <label for="idAnimal" class="form-label">idAnimal:</label>
+            <label for="idAnimal" class="form-label">Animal:</label>
             <select [(ngModel)]="lance.idAnimal" id="idAnimal" name="idAnimal" class="form-select" >
                 <option *ngFor="let animal of animais" value="{{animal.id}}">{{animal.nome}}</option>
             </select>

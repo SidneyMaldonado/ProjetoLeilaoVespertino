@@ -8,9 +8,7 @@ import { Mensagem } from '../models/mensagem';
   providedIn: 'root'
 })
 export class LanceService {
-  listar() {
-    throw new Error('Method not implemented.');
-  }
+
 
   constructor(private http: HttpClient) { }
 
@@ -26,6 +24,10 @@ export class LanceService {
   }
 
   alterar(lance: Lance): Observable<Mensagem>{
-    return this.http.put<Mensagem>("http://localhost:8080/lance", lance);
+    return this.http.put<Mensagem>("http://localhost:8080/lance/", lance);
   }
+  excluir(id: string ): Observable<Mensagem>{
+    return this.http.delete<Mensagem>("http://localhost:8080/lance/"+id)
+  }
+
 }

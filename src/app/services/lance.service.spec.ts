@@ -73,15 +73,14 @@ describe('LanceService', () => {
       mensagem: '',
       erro: []
     }
-    const lance: Lance = 
-    {
+    const lance: Lance = {
       "id": 10,
-      "data": new Date('2022-02-10'),
-      "valor": 3109.1,
+      "data": new Date('2021-01-10'),
+      "valor": 3400.0,
       "ativo": true,
-      "idComprador": 8,
-      "idLeilao": 6,
-      "idAnimal": 6
+      "idComprador": 4,
+      "idLeilao": 7,
+      "idAnimal": 5
     }
 
     service.alterar(lance).subscribe(
@@ -90,5 +89,5 @@ describe('LanceService', () => {
     const testRequest = httpTestingController.expectOne('http://localhost:8080/lance')
     expect(testRequest.request.method).toBe('PUT')
     testRequest.flush(msg)
-  })
+  });
 });

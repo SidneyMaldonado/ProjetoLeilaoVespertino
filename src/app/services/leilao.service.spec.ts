@@ -84,4 +84,39 @@ describe('LeilãoServiceService', () => {
     testRequest.flush(msg)
   });
 
+  it('excluir()', ()=>{
+    const msg:  Mensagem = {
+      mensagem: '',
+      erro: []
+    }
+
+    service.excluir('7').subscribe(
+      dados => expect(dados).toEqual(msg)
+    );
+    const testRequest = httpTestingController.expectOne('http://localhost:8080/leilao/7')
+    expect(testRequest.request.method).toBe('DELETE')
+
+    testRequest.flush(msg)
+
+  });
+
+  it('buscar()', ()=>{
+    const leilao: Leilao =
+    {
+      "id": 7,
+      "data": new Date("2022-01-11"),
+      "nome": "Clube do boi teste",
+      "ativo": true
+    };
+
+    service.buscar('7').subscribe(
+      dados => expect(dados).toEqual(leilao)
+    )
+    const testRequest = httpTestingController.expectOne('http://localhost:8080/leilao/7');
+    expect(testRequest.request.method).toBe('GET');
+    expect(testRequest.request.responseType).toBe('json');
+    testRequest.flush(leilao);
+
+  });
+
 })

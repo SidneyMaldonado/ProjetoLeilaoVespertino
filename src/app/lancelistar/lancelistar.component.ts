@@ -14,7 +14,7 @@ export class LancelistarComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.servicoLance.lancelistar().subscribe(
+    this.servicoLance.listar().subscribe(
       data => this.lances = data  
     )
   }

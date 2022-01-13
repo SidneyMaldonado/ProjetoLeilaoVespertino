@@ -12,7 +12,7 @@ export class LanceService {
 
   constructor(private http: HttpClient) { }
 
-  lancelistar(): Observable<any>{
+  listar(): Observable<any>{
     return this.http.get<Lance>("http://localhost:8080/lance");
   }
   buscar( id: string  ): Observable<Lance>{

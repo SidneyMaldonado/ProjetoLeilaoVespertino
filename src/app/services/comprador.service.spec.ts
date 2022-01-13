@@ -85,6 +85,42 @@ describe('CompradorService',() =>{
     expect(testRequest.request.method).toBe('PUT')
     testRequest.flush(msg)
   });
+
+  it('excluir()', ()=>{
+    const msg:  Mensagem = {
+      mensagem: '',
+      erro: []
+    }
+    
+    service.excluir('26').subscribe(
+      dados => expect(dados).toEqual(msg)
+    );
+    const testRequest = httpTestingController.expectOne('http://localhost:8080/comprador/26')
+    expect(testRequest.request.method).toBe('DELETE')
+    
+    testRequest.flush(msg) 
+
+  });
+
+  it('buscar()', ()=>{
+    const comprador: Comprador = 
+      {
+        "id": 17,
+        "nome": "Luisa",
+        "email": "luisa@gmail.com",
+        "telefone": "6714545688",
+        "ativo": true
+      };
+
+    service.buscar('17').subscribe(
+      dados => expect(dados).toEqual(comprador)
+    )
+    const testRequest = httpTestingController.expectOne('http://localhost:8080/comprador/17');
+    expect(testRequest.request.method).toBe('GET');
+    expect(testRequest.request.responseType).toBe('json');
+    testRequest.flush(comprador);
+
+  });
   
 });
 

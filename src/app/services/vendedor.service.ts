@@ -18,7 +18,7 @@ export class VendedorService {
     return this.http.get<Vendedor>("http://localhost:8080/vendedor/"+ id);
   }
   incluir(vendedor: Vendedor): Observable<Mensagem>{
-    return this.http.post<Mensagem>("http://localhost:8080/vendedor/", vendedor);
+    return this.http.post<Mensagem>("http://localhost:8080/vendedor", vendedor);
   }
   alterar(vendedor: Vendedor): Observable<Mensagem>{
     return this.http.put<Mensagem>("http://localhost:8080/vendedor/", vendedor);

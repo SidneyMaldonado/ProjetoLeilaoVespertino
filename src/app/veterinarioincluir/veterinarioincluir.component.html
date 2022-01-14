@@ -1,6 +1,7 @@
 <div class="container mt-3">
+  <h1 id="title">Incluir Veterinario</h1>
     <form method="post" #frm="ngForm" (ngSubmit)="incluir(frm)">
-        
+
         <div class="mb-3 mt-3">
           <label for="nome" class="form-label">Nome:</label>
           <input type="text" class="form-control" id="nome" placeholder="Informe o nome " name="nome" [(ngModel)]="veterinario.nome">
@@ -15,14 +16,14 @@
             <label for="telefone" class="form-label">Telefone:</label>
             <input type="text" class="form-control" id="telefone" placeholder="Informe o telefone " name="telefone" [(ngModel)]="veterinario.telefone">
         </div>
-    
+
         <div class="form-check mb-3">
           <label class="form-check-label">
             <input class="form-check-input" type="checkbox" name="ativo" id="ativo" [(ngModel)]="veterinario.ativo" >Ativo
           </label>
         </div>
-    
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button id= "salvar" type="submit" class="btn btn-primary">Enviar</button>
       </form>
-    
+
     </div>

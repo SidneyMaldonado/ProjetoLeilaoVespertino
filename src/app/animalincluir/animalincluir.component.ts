@@ -13,6 +13,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./animalincluir.component.css']
 })
 export class AnimalincluirComponent implements OnInit {
+
+resultado: boolean = false;
 mensagem: Mensagem ={
   mensagem: '',
   erro: []
@@ -39,14 +41,16 @@ vendedores: Vendedor[] = []
     
   }
 
-  incluir(frm: NgForm){
+  incluir(frm: NgForm) {
 
     this.servicoAnimal.incluir(this.animal).subscribe(
       dados => {this.mensagem = dados
         if (this.mensagem.erro.length == 0){
           this.router.navigateByUrl("animal")
+          this.resultado = true;
         } else {
           this.mensagem.erro.forEach( function (value) { alert(value) })
+          this.resultado = false;
         }
       }
     )

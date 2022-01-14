@@ -1,4 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { LanceService } from '../services/lance.service';
 
 import { LancelistarComponent } from './lancelistar.component';
 
@@ -8,7 +10,9 @@ describe('LancelistarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LancelistarComponent ]
+      declarations: [ LancelistarComponent ],
+      imports: [HttpClientTestingModule],
+      providers: [LanceService]
     })
     .compileComponents();
   });
@@ -22,4 +26,10 @@ describe('LancelistarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('O titulo deve aparecer'), () =>{
+    const titulo = fixture.debugElement.nativeElement.querySelector("#title");
+    let expected: string ="Lance";
+    let result: string = titulo.innerHTML;
+    expect(result).toEqual(expected)
+  }
 });

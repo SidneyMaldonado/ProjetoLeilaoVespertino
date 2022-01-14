@@ -1,6 +1,7 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AnimalService } from '../services/animal.service';
+import { VendedorService } from '../services/vendedor.service';
 
 import { VendedorlistarComponent } from './vendedorlistar.component';
 
@@ -12,7 +13,7 @@ describe('VendedorlistarComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ VendedorlistarComponent ],
       imports: [HttpClientTestingModule],
-      providers: [AnimalService]
+      providers: [VendedorService]
     })
     .compileComponents();
   });

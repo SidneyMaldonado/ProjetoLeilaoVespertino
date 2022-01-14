@@ -1,6 +1,7 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AnimalService } from '../services/animal.service';
+import { LeilaoService } from '../services/leilao.service';
 
 import { LeilaolistarComponent } from './leilaolistar.component';
 
@@ -12,7 +13,7 @@ describe('LeilaolistarComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ LeilaolistarComponent ],
       imports:[HttpClientTestingModule],
-      providers: [AnimalService]
+      providers: [LeilaoService]
     })
     .compileComponents();
   });

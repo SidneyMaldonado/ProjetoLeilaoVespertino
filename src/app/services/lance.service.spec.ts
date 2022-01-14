@@ -90,4 +90,38 @@ describe('LanceService', () => {
     expect(testRequest.request.method).toBe('PUT')
     testRequest.flush(msg)
   });
+
+  it ('excluir()', () => {
+    const msg: Mensagem = {
+      mensagem: '',
+      erro: []
+    }
+
+    service.excluir('10').subscribe(
+      dados => expect(dados).toEqual(msg)
+    );
+    const testRequest = httpTestingController.expectOne('http://localhost:8080/lance/10')
+    expect(testRequest.request.method).toBe('DELETE')
+    testRequest.flush(msg)
+  });
+
+  it ('buscar()', () => {
+    const lance: Lance = {
+      "id": 10,
+      "data": new Date('2021-01-10'),
+      "valor": 3400.0,
+      "ativo": true,
+      "idComprador": 4,
+      "idLeilao": 7,
+      "idAnimal": 5
+    };
+
+    service.buscar('10').subscribe(
+      dados => expect(dados).toEqual(lance)
+    )
+    const testRequest = httpTestingController.expectOne('http://localhost:8080/lance/10')
+    expect(testRequest.request.method).toBe('GET');
+    expect(testRequest.request.responseType).toBe('json');
+    testRequest.flush(lance);
+  });
 });

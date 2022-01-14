@@ -10,7 +10,7 @@ describe('LancelistarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LancelistarComponent ],
+      declarations: [ LancelistarComponent],
       imports: [HttpClientTestingModule],
       providers: [LanceService]
     })
@@ -32,4 +32,10 @@ describe('LancelistarComponent', () => {
     let result: string = titulo.innerHTML;
     expect(result).toEqual(expected)
   }
+  it('O rodape deve aparecer',() =>{
+    const rodape = fixture.debugElement.nativeElement.querySelector("#rodape");
+    let expected: string ="todos os direitos reservados";
+    let result: string = rodape.innerHTML;
+    expect(result).toEqual(expected)
+  })
 });

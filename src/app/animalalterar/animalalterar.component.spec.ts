@@ -32,7 +32,7 @@ describe('AnimalalterarComponent', () => {
   it('Titulo renderizado', ()=>{
 
     const titulo = fixture.debugElement.nativeElement.querySelector("#title");
-    let expected: string ="Alterar Comprador";
+    let expected: string ="Alterar Animal";
     let result: string = titulo.innerHTML;
     expect(result).toEqual(expected);
 
